@@ -1,0 +1,71 @@
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #faf8ff;
+  --bg-card: #ffffff;
+  --text-primary: #181028;
+  --text-secondary: #524866;
+  --accent: #9333ea;       /* Azul corporativo bancario */
+  --accent-hover: #7e22ce;
+  --border: #e9e4f5;
+  --code-bg: #130b24;
+  --code-text: #f3e8ff;
+  --shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  --radius: 8px;
+  --transition: 0.25s ease;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #251542;
+  --bg-secondary: #2B144C;
+  --bg-card: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #e2d9f3;
+  --accent: #9D1AF2;
+  --accent-hover: #7dd3fc;
+  --border: #334155;
+  --code-bg: #020617;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ================= RESET & BASE ================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+a { 
+    color: inherit; 
+    text-decoration: none; 
+}
+
+ul { 
+    list-style: none; 
+}
+
+img { 
+    max-width: 100%; 
+    display: block; 
+}
+
+h1, h2, h3 { 
+    line-height: 1.2; 
+}
+
+.highlight {
+  color: var(--accent);
+}
+
