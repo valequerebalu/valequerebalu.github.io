@@ -1,48 +1,334 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Vale Querebalu | Backend Developer</title>
-    
-    <meta name="description" content="Portafolio de Vale Querebalu, desarrolladora backend especializada en Node.js, Express y bases de datos SQL y NoSQL.">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/layout.css">  
-    <link rel="stylesheet" href="assets/css/components.css">  
-    </head>
+<html lang="es" data-theme="dark">
 
-    <body>
-        <header class="main-header">
-            <nav class="nav">
-                <a href="#about-me" class="nav-link">Sobre mí</a>
-                <a href="#projects" class="nav-link">Proyectos</a>
-                <a href="#contact" class="nav-link">Contacto</a>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valeria Querebalú | Backend & Cloud Engineer</title>
+    <!-- Orden de cascada CSS -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+</head>
 
-        <main>
-            <section id="about-me" class="about-me-section">
-                <h1>Vale Querebalu</h1>
-                <h2>Desarrolladora Backend</h2>
-                <p>Especializada en PHP, Laravel, Java y bases de datos SQL y NoSQL.</p>
-            </section>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#inicio" class="nav__logo">&lt;VQ<span>.dev</span>/&gt;</a>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#inicio" class="nav__link">Inicio</a></li>
+                <li><a href="#stack" class="nav__link">Stack</a></li>
+                <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+                <li><a href="#experiencia" class="nav__link">Experiencia</a></li>
+                <li><a href="#certificaciones" class="nav__link">Certificaciones</a></li>
+                <li><a href="#beyondthecode" class="nav__link">Beyond the Code</a></li>
+                <li><a href="#contacto" class="nav__link">Contacto</a></li>
 
-            <section id="projects" class="projects-section">
-                <h2>Proyectos Destacados</h2>
-                <div class="project">
-                    <h3>Proyecto 1</h3>
-                    <p>Descripción del proyecto 1.</p>
+            </ul>
+            <div class="nav__actions">
+                <button id="theme-toggle" class="btn-icon" aria-label="Cambiar tema">🌙</button>
+                <button id="nav-toggle" class="btn-icon nav__toggle" aria-label="Abrir menú">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PRESENTACIÓN -->
+        <section id="inicio" class="hero section">
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <span class="badge">Backend Developer • Bases de Datos • Cloud</span>
+                    <h1 class="hero__title">Hola, soy <span class="highlight">Valeria Querebalú</span></h1>
+                    <div class="hero__text">
+                        <p>
+                            Me gusta descubrir cómo funcionan las cosas, cuestionar lo establecido y entender el porqué
+                            detrás de cada solución.
+                            Soy de esas personas que, cuando algo despierta su curiosidad, quiere investigar un poquito
+                            más.
+                        </p>
+                        <p>
+                            Me interesa la arquitectura de software, la integridad de datos y la seguridad en el
+                            desarrollo.
+                        </p>
+                        <p>
+                            Soy bachiller en Ingeniería de Sistemas y tengo especial interés en el desarrollo backend,
+                            las
+                            bases e ingeniería de datos, la automatización y las tecnologías cloud. Disfruto transformar
+                            ideas y
+                            necesidades en soluciones funcionales, aprender nuevas herramientas y enfrentar desafíos que
+                            me
+                            permitan crecer como profesional.
+                        </p>
+
+                        <p>
+                            Me considero una persona responsable, empática, sociable y bastante intensa cuando algo me
+                            apasiona. Actualmente, uno de mis mayores aprendizajes es convertir esa curiosidad en
+                            proyectos
+                            concretos: empezar, construir y resolver problemas.
+                        </p>
+
+                    </div>
+                    <div class="hero__buttons">
+                        <a href="#proyectos" class="btn btn--primary">Ver Proyectos</a>
+                        <a href="#contacto" class="btn btn--outline">Contactar</a>
+                    </div>
                 </div>
-                <div class="project">
-                    <h3>Proyecto 2</h3>
-                    <p>Descripción del proyecto 2.</p>
+                <div class="hero__card">
+                    <img src="assets/img/perfil_portafolio.png" alt="Foto de Valeria Querebalú" class="hero__photo" />
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="contact" class="contact-section">
-                <h2>Contacto</h2>
-                <p>Email: valequerebalu@example.com</p>
-            </section>
-        </main>
-    </body>
+        <!-- STACK TECNOLÓGICO -->
+        <section id="stack" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Stack Tecnológico</h2>
+                <div class="stack__grid">
+                    <article class="card">
+                        <h3>Backend</h3>
+                        <ul class="tag-list">
+                            <li>Java 17+</li>
+                            <li>Spring Boot</li>
+                            <li>Spring Security (JWT)</li>
+                            <li>Spring Data JPA</li>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Laravel</li>
+                            <li>JavaScript</li>
+                            <li>APIs RESTful</li>
+                            <li>Maven / Gradle</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Bases de Datos & Data Engineering</h3>
+                        <ul class="tag-list">
+                            <li>Oracle SQL</li>
+                            <li>PL/SQL (Packages / Procedures)</li>
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>SQL Server</li>
+                            <li>SQLite</li>
+                            <li>Fundamentos ETL / ELT</li>
+                            <li>Data Warehouse</li>
+                            <li>Pipelines de Datos</li>
+                            <li>Modelado Relacional</li>
+                            <li>Transacciones ACID</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Cloud & Herramientas</h3>
+                        <ul class="tag-list">
+                            <li>Microsoft Azure</li>
+                            <li>Git / GitHub</li>
+                            <li>Docker</li>
+                            <li>Postman</li>
+                            <li>Bizagi</li>
+                            <li>Linux</li>
+                            <li>Scrum / Agile</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS (Renderizados dinámicamente desde tu arquitectura JS) -->
+        <section id="proyectos" class="section">
+            <div class="container">
+                <h2 class="section__title">Proyectos & Arquitectura</h2>
+                <p class="section__desc">Soluciones orientadas a integridad de datos, seguridad y escalabilidad.</p>
+                <div id="projects-container" class="projects__grid"></div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA -->
+        <section id="experiencia" class="section section--alt">
+            <div class="container experience__layout">
+                <div class="experience__header">
+                    <h2 class="section__title">Experiencia & Trayectoria</h2>
+                    <p class="section__desc">
+                        Mi recorrido profesional construyendo soluciones backend, arquitectura de datos y automatización
+                        empresarial.
+                    </p>
+
+                    <!-- Opcional: Una tarjeta resumen de logros rápidos -->
+                    <div class="experience__highlight">
+                        <span>+90%</span>
+                        <p>Optimización en tiempos de procesamiento ETL mediante Clean Architecture.</p>
+                    </div>
+                </div>
+
+                <!-- COLUMNA DERECHA: Tu línea de tiempo actual -->
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <span class="timeline__date">Junio 2026 – Actualidad</span>
+                        <h3 class="timeline__role">Asistente de Desarrollo de Software y Automatización</h3>
+                        <span class="timeline__place">Complejo Agroindustrial Beta</span>
+                        <p class="timeline__text">
+                            Desarrollo de soluciones backend y módulos de seguridad con Java, Python y APIs REST
+                            (Supabase/PostgREST), aplicando Clean Architecture y pipelines ETL que redujeron tiempos
+                            operativos en más de un 90%. Diseño de dashboards de métricas y KPIs en Streamlit.
+                        </p>
+                    </div>
+
+                    <div class="timeline__item">
+                        <span class="timeline__date">Agosto 2025 – Marzo 2026</span>
+                        <h3 class="timeline__role">Analista de Desarrollo de Software</h3>
+                        <span class="timeline__place">Préstamos del Norte</span>
+                        <p class="timeline__text">
+                            Desarrollo de módulos core en PHP 8 bajo arquitecturas limpias y diseño de bases de datos en
+                            MySQL optimizadas para grandes volúmenes de información. Automatización de flujos de
+                            inventarios, implementación de mapas de calor para monitoreo de
+                            red y coordinación de despliegues críticos garantizando continuidad operativa 24/7.
+                        </p>
+                    </div>
+
+                    <div class="timeline__item">
+                        <span class="timeline__date">Julio 2024 – Julio 2025</span>
+                        <h3 class="timeline__role">Desarrolladora Full Stack Jr</h3>
+                        <span class="timeline__place">Innovahtec Solutions</span>
+                        <p class="timeline__text">
+                            Implementación y consumo de APIs REST con Django y Laravel, gestión de persistencia
+                            relacional con Eloquent ORM y despliegue de entornos contenerizados con Docker. Desarrollo
+                            de módulos empresariales en Java (Android/SQLite y Swing con JasperReports) e interfaces
+                            dinámicas con Vue 3 dentro de equipos multidisciplinarios.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CERTIFICACIONES -->
+        <section id="certificaciones" class=" section">
+            <div class="container">
+                <h2 class="section__title">Certificaciones</h2>
+                <div class="cert__grid">
+                    <article class="cert-card">
+                        <div class="cert-card__badge">AZ-900</div>
+                        <div class="cert-card__info">
+                            <h3>Microsoft Certified: Azure Fundamentals</h3>
+                            <p>Microsoft • Fundamentos de servicios cloud, seguridad, gobierno y arquitectura en Azure.
+                            </p>
+                            <a href="https://learn.microsoft.com/" target="_blank" rel="noopener"
+                                class="cert-card__link">
+                                Ver credencial ↗
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="beyondthecode" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Beyond the Code</h2>
+                <p class="section__subtitle">Te cuento un poco más de mi vida fuera del código.</p>
+                <p class="section__desc">
+                    Algunos acontecimientos importantes en mi trayectoria profesional.
+                </p>
+
+                <div class="beyond__grid">
+
+                    <!-- FILA 1: Hitos & Trabajo -->
+                    <article class="beyond-card">
+                        <div class="beyond-card__img-wrap">
+                            <img src="assets/img/graduacion.jpeg" alt="Graduación universitaria" loading="lazy" />
+                        </div>
+                        <div class="beyond-card__body">
+                            <h3>Graduación</h3>
+                            <p>El cierre de una etapa de mucho esfuerzo y el inicio oficial de mi carrera en ingeniería
+                                y tecnología.</p>
+                        </div>
+                    </article>
+
+                    <article class="beyond-card">
+                        <div class="beyond-card__img-wrap">
+                            <img src="assets/img/trabajo-equipo.jpg" alt="Equipo de trabajo" loading="lazy" />
+                        </div>
+                        <div class="beyond-card__body">
+                            <h3>Equipo de trabajo InnovaHtec</h3>
+                            <p>Construyendo soluciones reales junto a equipos multidisciplinarios y aprendiendo de cada
+                                reto.</p>
+                        </div>
+                    </article>
+
+                    <article class="beyond-card">
+                        <div class="beyond-card__img-wrap">
+                            <img src="assets/img/proyecto-campo.jpg" alt="Operaciones y datos" loading="lazy" />
+                        </div>
+                        <div class="beyond-card__body">
+                            <h3>Impacto Real Beta</h3>
+                            <p>Ver cómo la automatización y los datos transforman procesos operativos en el día a día.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <!-- FILA 2: Sobre mí & Pasatiempos -->
+                    <article class="beyond-card">
+                        <div class="beyond-card__img-wrap">
+                            <img src="assets/img/lectura.jpeg" alt="Lectura y aprendizaje" loading="lazy" />
+                        </div>
+                        <div class="beyond-card__body">
+                            <h3>Mis libros</h3>
+                            <p>Siempre encuentro espacio para la lectura, me entretiene mucho.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="beyond-card">
+                        <div class="beyond-card__img-wrap">
+                            <img src="assets/img/deporte.jpeg" alt="Actividad física" loading="lazy" />
+                        </div>
+                        <div class="beyond-card__body">
+                            <h3>Movimiento</h3>
+                            <p>El ejercicio es parte de mi rutina. Trato de mantenerme activa y aprendiendo nuevos
+                                deportes.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="beyond-card">
+                        <div class="beyond-card__img-wrap">
+                            <img src="assets/img/viajes.jpeg" alt="Viajar y explorar" loading="lazy" />
+                        </div>
+                        <div class="beyond-card__body">
+                            <h3>Explorar</h3>
+                            <p>Viajar, conocer nuevos lugares y salir de la rutina. Hay mucho mundo por descubrir.</p>
+                        </div>
+                    </article>
+
+
+
+                </div>
+            </div>
+        </section>
+        <!-- CONTACTO -->
+        <section id="contacto" class="section">
+            <div class="container contact__box">
+                <h2 class="section__title">Contacto</h2>
+                <p class="section__desc">Buscando oportunidades en desarrollo Backend, Ingeniería de Datos y Desarrollo
+                    Web.</p>
+                <div class="contact__links">
+                    <a href="mailto:tu.correo@ejemplo.com" class="btn btn--primary">Enviar Correo</a>
+                    <a href="https://github.com/valequerebalu" target="_blank" rel="noopener"
+                        class="btn btn--outline">GitHub</a>
+                    <a href="https://www.linkedin.com/in/valeria-aurora-querebalu-santisteban/" target="_blank"
+                        rel="noopener" class="btn btn--outline">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="year"></span> Valeria Querebalú. Arquitectura modular en Vanilla JS.</p>
+        </div>
+    </footer>
+
+    <!-- Punto de entrada modular -->
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
 </html>
