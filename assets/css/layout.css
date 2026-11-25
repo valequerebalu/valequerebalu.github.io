@@ -35,12 +35,12 @@
 
 .container {
   width: 90%;
-  max-width: 1120px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .section--alt {
@@ -84,6 +84,12 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.beyond__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
 }
 
 /* ================= HERO ================= */
@@ -143,5 +149,26 @@
 
   .nav__menu.active {
     display: flex;
+  }
+
+  .hero__card { justify-self: center; }
+
+  .experience__layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .experience__header {
+    position: static;
+  }
+}
+@media (max-width: 1024px) {
+  .beyond__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .beyond__grid {
+    grid-template-columns: 1fr;
   }
 }
