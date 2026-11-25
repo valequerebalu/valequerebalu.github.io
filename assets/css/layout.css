@@ -91,6 +91,18 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
 }
+.experience__layout {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr; /* Izquierda más compacta, derecha más amplia */
+  gap: 3.5rem;
+  align-items: start;
+}
+
+/* Hace que el título te acompañe suavemente al hacer scroll */
+.experience__header {
+  position: sticky;
+  top: 6rem;
+}
 
 /* ================= HERO ================= */
 .hero__grid {
